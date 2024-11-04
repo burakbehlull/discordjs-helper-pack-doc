@@ -18,14 +18,6 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase:
     'https://github.com/burakbehlull/discordjs-helper-pack-docs',
-  useNextSeoProps() {
-    const { asPath } = useRouter();
-    if (asPath !== '/') {
-      return {
-        titleTemplate: '%s – DiscordJS Helper Pack',
-      };
-    }
-  },
   gitTimestamp({ timestamp }) {
     const { locale, asPath } = useRouter();
 
