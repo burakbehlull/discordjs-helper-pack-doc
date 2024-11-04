@@ -65,16 +65,7 @@ const config: DocsThemeConfig = {
       </>
     );
   },
-  footer: {
-    text: (
-      <span>
-        MIT {new Date().getFullYear()} ©{' '}
-        <a href="/" target="_blank">
-          DiscordJS Helper Pack
-        </a>
-      </span>
-    ),
-  },
+  footer: {}
 };
 
 export default config;
