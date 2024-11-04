@@ -17,7 +17,7 @@ export default function index(){
 					<h1>Discordjs Helper Pack</h1>
 					<div>
 						<ul>
-							<li><Link href='/start-list'>Getting Started</Link></li>
+							<li><Link href='/getting-started/quick-start'>Getting Started</Link></li>
 						</ul>
 					</div>
 				</main>
