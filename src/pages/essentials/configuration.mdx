@@ -1,0 +1,30 @@
+---
+title: Configuration
+description: Configuration
+---
+
+import { Tabs } from 'nextra/components'
+
+### Setup:
+<span>General meeting template, it is imperative that you define this:</span>
+<Tabs items={['CommonJS', 'ESM', 'TypeScript']}>
+    <Tabs.Tab>
+	```js
+	const { Configuration } = require('discordjs-helper-pack') 
+	
+	Configuration({
+		// incessary information
+		client: client,
+		dirname: __dirname,
+
+		commandsFileName: 'commands', // commands file
+		eventsFileName: 'events', // events file
+		chatInputCommand: true, // command interaction
+						
+		//prefix configurations
+		prefix: 'm!',
+		prefixCommandsFileName: 'prefixCommands'
+	})
+	```
+    </Tabs.Tab>
+</Tabs>

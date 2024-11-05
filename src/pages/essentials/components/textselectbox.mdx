@@ -1,0 +1,54 @@
+---
+title: TextSelectBox
+description: TextSelectBox
+---
+
+import { Tabs } from 'nextra/components'
+
+### TextSelectBox:
+<span>General meeting template, it is imperative that you define this:</span>
+<Tabs items={['CommonJS', 'ESM', 'TypeScript']}>
+    <Tabs.Tab>
+	```js
+	const { TextSelectBox } = require('discordjs-helper-pack')
+
+	const { ActionRow } = require('discord-helper-pack')
+
+	# customId, title
+	const textbox = new TextSelectBox('horoscope','Horoscope')
+
+	default: label, value
+	textbox.add(label, value, description, boxDefault, emoji)
+	textbox.add('Aquarius', 'aquarius', 'choose Aquarius')
+
+	const select = textbox.build()
+
+	// irrelevant
+	ActionRow(select)
+	```
+    </Tabs.Tab>
+</Tabs>
+
+### `customId` (required)
+
+- Type: `string`
+
+### `title` (required)
+
+- Type: `string`
+
+### `add`
+- Return type: `void`
+- Arguments:
+- - **label**: `string`
+  - **value**: `string`
+  - **description**: `string`
+  - **boxDefault**: `string`
+  - **emoji**: `string`
+
+### `build`
+- Return type: ` void`
+
+
+
+

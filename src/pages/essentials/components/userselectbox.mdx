@@ -1,0 +1,58 @@
+---
+title: UserSelectBox
+description: UserSelectBox
+---
+
+import { Tabs } from 'nextra/components'
+
+### UserSelectBox:
+<span>General meeting template, it is imperative that you define this:</span>
+<Tabs items={['CommonJS', 'ESM', 'TypeScript']}>
+    <Tabs.Tab>
+	```js
+	const { UserSelectBox } = require('discordjs-helper-pack')
+
+	default: customId, description
+	const select = new UserSelectBox(customId, description).build()
+	const select = new UserSelectBox(customId, placeholder, max, min, disabled,setUsers,addUsers).build()
+	```
+    </Tabs.Tab>
+</Tabs>
+
+### `customId` (required)
+
+- Type: `string`
+
+### `description` (required)
+
+- Type: `string`
+
+### `max` (optional)
+
+- Type: `number`
+
+### `min` (optional)
+
+- Type: `number`
+
+### `disabled` (optional)
+
+- Type: `boolean`
+
+### `addUsers` (optional)
+
+- Type:  `array` | `string`
+
+### `setUsers` (optional)
+
+- Type:  `array` | `string`
+
+
+### `build`
+
+
+- Return type: ` void`
+
+
+
+
