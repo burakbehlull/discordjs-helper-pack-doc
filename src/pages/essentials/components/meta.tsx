@@ -6,7 +6,9 @@ export const meta = {
   title: 'Components',
   children: {
     'textselectbox': 'textselectbox',
-	'userselectbox': 'userselectbox'
+	'userselectbox': 'userselectbox',
+	'button': 'button',
+	'modal': 'modal'
   },
 }
 

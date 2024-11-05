@@ -1,0 +1,48 @@
+---
+title: Button
+description: Button
+---
+
+import { Tabs } from 'nextra/components'
+
+### Button:
+<Tabs items={['CommonJS', 'ESM', 'TypeScript']}>
+    <Tabs.Tab>
+	```js
+	const { Button } = require('discordjs-helper-pack')
+
+	const button = new Button()
+
+	default value: customId, label, buttonStyle
+	btn.add()
+
+	// example
+	btn.add("example", "this is a example", btn.style.Secondary)
+
+	// and others values
+	emoji, disabled
+	btn.add("example", "this is a example", btn.style.Secondary, "emoji", true)
+
+	const btns = btn.build()
+
+	// use example
+	i.reply({components: [btns]})
+	```
+    </Tabs.Tab>
+</Tabs>
+
+### `add`
+- Return type: `void`
+- Arguments:
+- - **customId**: `string`
+  - **label**: `string`
+  - **buttonStyle**: `class.style `
+  - **emoji**: `string`
+  - **disabled**: `boolean`
+
+### `build`
+- Return type: ` void`
+
+
+
+

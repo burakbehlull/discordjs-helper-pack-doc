@@ -1,0 +1,63 @@
+---
+title: Modal
+description: Modal
+---
+
+import { Tabs } from 'nextra/components'
+
+### Modal:
+<Tabs items={['CommonJS', 'ESM', 'TypeScript']}>
+    <Tabs.Tab>
+	```js
+	const { Modal } = require('discordjs-helper-pack')
+
+	new Modal(customId, title)
+
+	default: customId, label
+	.add(customId, label)
+
+	// other
+	.add(customId, label, value, {paragraph, required, placeholder, max, min})
+
+	// example
+	const modal = new Modal('user', 'User İnformation')
+
+	modal.add('firstname', 'First Name')
+	modal.add('lastname', 'Last Name')
+
+	// ready
+	const built = modal.build()
+
+
+	interaction.showModal(built)
+	// oth
+	interaction.showModal(modal.build())
+	```
+    </Tabs.Tab>
+</Tabs>
+
+### `customId` (required)
+
+- Type: `string`
+
+### `label` (required)
+
+- Type: `string`
+
+### `add`
+- Return type: `void`
+- Arguments:
+- - **customId**: `string`
+  - **label**: `string`
+  - **value**: `string`
+  - **paragraph**: `string`
+  - **required**: `boolean`
+  - **max**: `number`
+  - **min**: `number`
+
+### `build`
+- Return type: ` void`
+
+
+
+
